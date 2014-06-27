@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>US Phone Number Format </title>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="rcformatusphone.js"></script>
+		<style>
+			input{
+				padding: 10px;
+				border: 1px solid #ccc;
+			}
+			label{
+				font-weight: bold;
+			}
+		</style>
+		<script>
+			$(function(){
+				$(".phonenumber").rcFormatUSPhoneNumber();
+			
+				$(".number2").rcFormatUSPhoneNumber({
+					dashError: "Custom Message - No dashes",
+					onlyNumbersError: "Custom Message - Only Numbers"
+				});
+				$(".number3").rcFormatUSPhoneNumber({
+					showErrors: false
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<h2>
+			Format US Phone Number - (xxx)-xxx-xxxx - as you type
+		</h2>
+		
+		<br>
+		<label>Default Options</label><br>
+		<input type="tel" class="phonenumber" placeholder="U.S. Phone Number" maxlength="14">
+		<br><br>
+		<label>Custom Error Messages</label><br>
+		<input type="tel" class="number2" placeholder="U.S. Phone Number" maxlength="14">
+		<br><br>
+		<label>No Errors Messages are displayed</label><br>
+		<input type="tel" class="number3" placeholder="U.S. Phone Number" maxlength="14">
+		<br>
+	</body>
+	
+</html>
