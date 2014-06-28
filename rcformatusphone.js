@@ -50,7 +50,7 @@
 				this.value = x.substring(0, x.length-1);
 				
 				if (opts.showErrors){
-					if ($(".rcErrorContainer").length == 1){
+					if ($this.next("div").length == 1){
 						$this.next().show();
 						$this.next().html(opts.dashError);
 					}else{
@@ -102,7 +102,7 @@
 				}else{
 					this.value = "";
 					if (opts.showErrors){
-						if ($(".rcErrorContainer").length == 1){
+						if ($this.next("div").length == 1){
 							$this.next().show();
 							$this.next().html(opts.onlyNumbersError);
 						}else{
