@@ -15,7 +15,7 @@ This plugin offers :
 
 How to use it?
 ===============
-<b>Step 1:</b>  Make sure to include the plugin into your HTML
+<b>Step 1:</b>  Make sure to include the plugin into your HTML - It works with jQuery 1.11+
 ```html
   <script src="rcformatusphone-minified.js"></script>
 ```
