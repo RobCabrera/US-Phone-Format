@@ -1,4 +1,4 @@
-US-Phone-Format Plugin
+US-Phone-Format Plugin v.1.0
 ===============
 
 Plugin to Format a US Phone Number automatically as you type.
